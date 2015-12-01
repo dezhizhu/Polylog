@@ -54,7 +54,8 @@ axis([-2,1,-1,1]); grid on;
 
 % 3.2 Set title, labels and legend
 title('PolyLogarithms of $z$','FontSize',20); 
-xlabel('$z$','FontSize',16); ylabel('$Li_n(z)$','FontSize',16);
+xlabel('$z$','FontSize',16,'Interpreter','LaTex'); 
+ylabel('$Li_\nu(z)$','FontSize',16,'Interpreter','LaTex');
 hleg = legend( ...
 'Li_{ 7/2}(z)','Li_{ 3}(z)','Li_{ 5/2}(z)','Li_{ 2}(z)', ...
 'Li_{ 3/2}(z)','Li_{ 2}(z)','Li_{ 1/2}(z)','Li_{ 0}(z)', ...
