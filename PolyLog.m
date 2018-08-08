@@ -26,8 +26,8 @@ function g = PolyLog(n,z)
 % z: can be is a single value or vector array.
 %
 %% Solution Procedure
-if mod(n,1)==0; 
-    g = real(polylog(n,z)); % if n:integer, the use matlab built in polylog function
+if mod(n,1)==0
+    g = polylog(n,z); % if n:integer, the use matlab built in polylog function
 else
 % 4 approximations are given for PolyLog(n,z) depending on the value of z
 id1=find(z>=0.55); z1=z(id1);         %Range 1:  0.55 >= z >= 1.0 : BE int

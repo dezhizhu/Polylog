@@ -6,10 +6,7 @@
 %                           All rights reserved.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% 1. Set z range
-z = -2:0.01:0.99;
-
-% 2.1 Set plotting defaults
+% 1.1 Set plotting defaults
 set(0,'defaultTextInterpreter','latex')
 set(0,'DefaultTextFontName','Times',...
 'DefaultTextFontSize',14,...
@@ -21,13 +18,16 @@ set(0,'DefaultTextFontName','Times',...
 'DefaultFigureColor','w',...
 'DefaultLineMarkerSize',7.75)
 
-% 2.2 list of options for lines
+% 1.2 list of options for lines
 color=['k','r','m','b','c','g','y','w'];
 lines={'-',':','--','-.','-.','none'};
 mark=['s','+','o','x','v','none'];
 
-% 2.3 set local marker size
+% 1.3 set local marker size
 ms = 5;
+
+% 2. Set z range
+z = -2:0.01:0.99; % Real range
 
 % 3. Plot Polylog curves from n -7/2 to 7/2 
 figure(1)
